@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Demostración de lamanipulación del Output con Javascript</h1>
+    <button onclick="alertaNombre()">Mostar nombre</button>
+    <script>
+        function alertaNombre() {
+            alert("Hugo Alberto Portillo Garcia");
+        }
+    </script>
+    <p id="mensaje">Cambia este renglón con el boton</p>
+    <button onclick="cambiarMensaje()">Cambaiar Mensaje</button>
+    <script>
+        function cambiarMensaje() {
+            document.getElementById("mensaje").innerHTML = "¡Texto actualizado con Javascript!";
+        }
+    </script>
+
+    <script>
+        window.addEventListener('load', () => {
+            console.log('La página se ha recargado correctamente');
+        });
+    </script>
+
+</body>
+
+</html>
